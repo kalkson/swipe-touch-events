@@ -3,6 +3,7 @@ module.exports['default'] = (function (element = document, threshold = 50) {
   let startingY = 0;
   let movementX = 0;
   let movementY = 0;
+  let target;
 
   const updateMovement = (e) => {
     const { clientX, clientY } = e.touches[0];
@@ -13,6 +14,7 @@ module.exports['default'] = (function (element = document, threshold = 50) {
 
   element.addEventListener('touchstart', (e) => {
     const { clientX, clientY } = e.touches[0];
+    target = e.target;
 
     startingX = clientX;
     startingY = clientY;

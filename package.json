@@ -1,6 +1,6 @@
 {
   "name": "swipe-touch-events",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript based library that allow use swipe-touch events on DOM",
   "main": "index.js",
   "repository": {
